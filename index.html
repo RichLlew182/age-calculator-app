@@ -16,20 +16,34 @@
 
   <main class="bg-off-white flex flex-col justify-center">
     <section id="ageCalculator" class="container bg-white">
-      <form id="date-entry" class="flex flex-row">
-        <div class="date-input">
-          <label class="fw-bold color-smokey-grey uppercase" for="day">Day</label>
-          <input class="fs-normal fw-bold" type="number" name="day" id="birthday" placeholder="DD">
-        </div>
+      <form id="date-entry">
+        <div class="input-group flex flex-row">
+          <div class="date-input">
+            <label class="fw-bold color-smokey-grey uppercase" for="day">Day</label>
+            <input class="fs-normal fw-bold" type="number" name="day" id="birthday" placeholder="DD">
+            <div class="error fs-small fw-normal-i color-red">
+              Must be a valid day
+            </div>
+          </div>
 
-        <div class="date-input">
-          <label class="fw-bold color-smokey-grey uppercase" for="month">Month</label>
-          <input class="fs-normal fw-bold" type="number" name="month" id="birthMonth" placeholder="MM">
-        </div>
+          <div class="date-input">
+            <label class="fw-bold color-smokey-grey uppercase" for="month">Month</label>
+            <input class="fs-normal fw-bold" type="number" name="month" id="birthMonth" placeholder="MM">
+            <div class="error fs-small fw-normal-i color-red">
+              Must be a valid month
+            </div>
+          </div>
 
-        <div class="date-input">
-          <label class="fw-bold color-smokey-grey uppercase" for="year">Year</label>
-          <input class="fs-normal fw-bold" type="number" name="year" id="birthYear" placeholder="YYYY">
+          <div class="date-input">
+            <label class="fw-bold color-smokey-grey uppercase" for="year">Year</label>
+            <input class="fs-normal fw-bold" type="number" name="year" id="birthYear" placeholder="YYYY">
+            <div class="error fs-small fw-normal-i color-red">
+              Must be in the past
+            </div>
+          </div>
+        </div>
+        <div class="error fs-small fw-normal-i color-red">
+          Must be a valid date
         </div>
         <button id="submitButton" type="submit" class="flex justify-center items-center"><img id="submitArrow"
             src="./assets/images/icon-arrow.svg" alt="" width="46" height="44">

@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: 'Poppins Italic';
+  font-family: 'Poppins Regular Italic';
   src: url('../fonts/Poppins-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
@@ -149,6 +149,14 @@
   align-items: flex-end;
 }
 
+.fw-normal {
+  font-family: 'Poppins Regular';
+}
+
+.fw-normal-i {
+  font-family: 'Poppins Regular Italic';
+}
+
 .fw-bold {
   font-family: 'Poppins Bold';
 }
@@ -166,7 +174,7 @@
 }
 
 .fs-small {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .fs-normal {
@@ -191,6 +199,10 @@
 
 .hidden {
   display: none;
+}
+
+.error {
+  margin-top: 8px;
 }
 
 
@@ -251,12 +263,15 @@ input:focus-visible {
 }
 
 #date-entry {
-  -webkit-column-gap: 32px;
-  -moz-column-gap: 32px;
-  column-gap: 32px;
   padding-bottom: 48px;
   border-bottom: 1px solid var(--lightGrey);
   position: relative;
+}
+
+.input-group {
+  -webkit-column-gap: 32px;
+  -moz-column-gap: 32px;
+  column-gap: 32px;
 }
 
 #date-output {
@@ -313,7 +328,7 @@ span.output-numbers {
     border-radius: 25px 25px 200px 25px;
   }
 
-  #date-entry {
+  .input-group {
     -webkit-column-gap: 15px;
     -moz-column-gap: 15px;
     column-gap: 15px;
