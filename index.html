@@ -19,19 +19,23 @@
       <div id="date-entry" class="flex flex-row">
         <div class="date-input">
           <label class="fw-bold color-smokey-grey uppercase" for="day">Day</label>
-          <input class="fs-normal fw-bold" type="number" name="day" id="birthday" placeholder="DD">
+          <input class="fs-normal fw-bold" type="number" name="day" id="birthday" placeholder="DD" min="1" max="31">
         </div>
 
         <div class="date-input">
           <label class="fw-bold color-smokey-grey uppercase" for="month">Month</label>
-          <input class="fs-normal fw-bold" type="number" name="month" id="birthMonth" placeholder="MM">
+          <input class="fs-normal fw-bold" type="number" name="month" id="birthMonth" placeholder="MM" min="1" max="12">
         </div>
 
         <div class="date-input">
           <label class="fw-bold color-smokey-grey uppercase" for="year">Year</label>
-          <input class="fs-normal fw-bold" type="number" name="year" id="birthYear" placeholder="YYYY">
+          <input class="fs-normal fw-bold" type="number" name="year" id="birthYear" placeholder="YYYY" min="1"
+            max="2024">
         </div>
       </div>
+
+      <button id="submitButton"><img src="./assets/images/icon-arrow.svg" alt="" width="46" height="44">
+      </button>
 
       <div id="date-output">
         <div class="fs-x-large fw-x-bold-i"><span class="color-purple">--</span> years</div>

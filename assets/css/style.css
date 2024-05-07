@@ -255,6 +255,24 @@ input {
   line-height: 1.2;
 }
 
+#submitButton {
+  background-color: var(--purple);
+  border-radius: 50%;
+  padding: 20px;
+  float: right;
+  position: relative;
+  top: -45px;
+  -webkit-transition: ease .3s;
+  -o-transition: ease .3s;
+  transition: ease .3s;
+  cursor: pointer;
+}
+
+
+#submitButton:hover {
+  background-color: black
+}
+
 /* Media Queries */
 
 @media (max-width : 767px) {
