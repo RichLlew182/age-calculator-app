@@ -8,31 +8,64 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <title>Frontend Mentor | Age calculator app | Richard Llewellyn</title>
-
+  <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
-  Day
-  DD
+  <main class="bg-off-white flex flex-col justify-center">
+    <section id="ageCalculator" class="container bg-white">
+      <form id="date-entry">
+        <div class="input-group flex flex-row">
+          <div class="date-input">
+            <label class="fw-bold color-smokey-grey uppercase" for="day">Day</label>
+            <input class="fs-normal fw-bold" type="number" name="day" id="birthday" placeholder="DD">
+            <div class="error fs-small fw-normal-i color-red hidden">
+              Must be a valid day
+            </div>
+          </div>
 
-  Month
-  MM
+          <div class="date-input">
+            <label class="fw-bold color-smokey-grey uppercase" for="month">Month</label>
+            <input class="fs-normal fw-bold" type="number" name="month" id="birthMonth" placeholder="MM">
+            <div class="error fs-small fw-normal-i color-red hidden">
+              Must be a valid month
+            </div>
+          </div>
 
-  Year
-  YYYY
+          <div class="date-input">
+            <label class="fw-bold color-smokey-grey uppercase" for="year">Year</label>
+            <input class="fs-normal fw-bold" type="number" name="year" id="birthYear" placeholder="YYYY">
+            <div class="error fs-small fw-normal-i color-red hidden">
+              Must be in the past
+            </div>
+          </div>
+        </div>
+        <div class="error fs-small fw-normal-i color-red hidden">
+          Must be a valid date
+        </div>
+        <button id="submitButton" type="submit" class="flex justify-center items-center"><img id="submitArrow"
+            src="./assets/images/icon-arrow.svg" alt="" width="46" height="44">
+        </button>
+      </form>
 
-  -- years
-  -- months
-  -- days
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div id="date-output">
+        <div class="fs-x-large fw-x-bold-i"><span class="output-numbers color-purple ls-minus-1">38</span>years</div>
+        <div class="fs-x-large fw-x-bold-i"><span class="output-numbers color-purple ls-minus-1">3</span>months</div>
+        <div class="fs-x-large fw-x-bold-i"><span class="output-numbers color-purple ls-minus-1">26</span>days</div>
+      </div>
+    </section>
 
-  <script src="./assets/js/script.js"></script>
+  </main>
+  <footer class="attribution">
+    Challenge by <a class="color-purple" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+      Mentor</a>.
+    Coded by <a class="color-purple" href="https://github.com/RichLlew182" target="_blank">Richard Llewellyn</a>.
+  </footer>
+
+  <script src=" ./assets/js/script.js"></script>
 
 </body>
 
