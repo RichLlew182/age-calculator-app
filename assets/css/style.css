@@ -1,0 +1,112 @@
+/* Variables */
+
+:root {
+
+  --purple: hsl(259, 100%, 65%);
+  --lightRed: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --offWhite: hsl(0, 0%, 94%);
+  --lightGrey: hsl(0, 0%, 86%);
+  --smokeyGrey: hsl(0, 1%, 44%);
+  --offBlack: hsl(0, 0%, 8%)
+}
+
+/* Utlility Clases */
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.color-purple {
+  color: var(--purple)
+}
+
+.bg-red {
+  background-color: var(--lightRed);
+}
+
+.color-red {
+  color: var(--lightRed)
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.color-white {
+  color: var(--white)
+}
+
+.bg-off-white {
+  background-color: var(--offWhite);
+}
+
+.color-off-white {
+  color: var(--offWhite)
+}
+
+.bg-smokey-grey {
+  background-color: var(--smokeyGrey);
+}
+
+.color-smokey-grey {
+  color: var(--smokeyGrey)
+}
+
+.bg-off-black {
+  background-color: var(--off-black);
+}
+
+.color-off-black {
+  color: var(--off-black)
+}
+
+/* Custom Overrides */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 15px;
+  width: 100%
+}
+
+footer a {
+  color: var(--softRed)
+}
+
+main {
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#ageCalculator {
+  margin: auto;
+}
+
+/* Media Queries */
+
+@media (max-width : 767px) {
+
+  .container {
+    width: 340px;
+  }
+
+}
+
+@media (min-width : 768px) {
+
+  .container {
+    width: 540px;
+  }
+}
