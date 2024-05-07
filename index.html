@@ -19,31 +19,28 @@
       <form id="date-entry" class="flex flex-row">
         <div class="date-input">
           <label class="fw-bold color-smokey-grey uppercase" for="day">Day</label>
-          <input class="fs-normal fw-bold" type="number" name="day" id="birthday" placeholder="DD" min="1" max="31"
-            required>
+          <input class="fs-normal fw-bold" type="number" name="day" id="birthday" placeholder="DD">
         </div>
 
         <div class="date-input">
           <label class="fw-bold color-smokey-grey uppercase" for="month">Month</label>
-          <input class="fs-normal fw-bold" type="number" name="month" id="birthMonth" placeholder="MM" min="1" max="12"
-            required>
+          <input class="fs-normal fw-bold" type="number" name="month" id="birthMonth" placeholder="MM">
         </div>
 
         <div class="date-input">
           <label class="fw-bold color-smokey-grey uppercase" for="year">Year</label>
-          <input class="fs-normal fw-bold" type="number" name="year" id="birthYear" placeholder="YYYY" min="1"
-            max="2024" required>
+          <input class="fs-normal fw-bold" type="number" name="year" id="birthYear" placeholder="YYYY">
         </div>
-        <button id="submitButton" type="submit" class="flex justify-center items-center"><img
+        <button id="submitButton" type="submit" class="flex justify-center items-center"><img id="submitArrow"
             src="./assets/images/icon-arrow.svg" alt="" width="46" height="44">
         </button>
       </form>
 
 
       <div id="date-output">
-        <div class="fs-x-large fw-x-bold-i"><span class="color-purple">--</span> years</div>
-        <div class="fs-x-large fw-x-bold-i"><span class="color-purple">--</span> months</div>
-        <div class="fs-x-large fw-x-bold-i"><span class="color-purple">--</span> days</div>
+        <div class="fs-x-large fw-x-bold-i"><span class="output-numbers color-purple">38</span>years</div>
+        <div class="fs-x-large fw-x-bold-i"><span class="output-numbers color-purple">3</span>months</div>
+        <div class="fs-x-large fw-x-bold-i"><span class="output-numbers color-purple">26</span>days</div>
       </div>
     </section>
 
