@@ -21,7 +21,7 @@
           <div class="date-input">
             <label class="fw-bold color-smokey-grey uppercase" for="day">Day</label>
             <input class="fs-normal fw-bold" type="number" name="day" id="birthday" placeholder="DD">
-            <div class="error fs-small fw-normal-i color-red">
+            <div class="error fs-small fw-normal-i color-red hidden">
               Must be a valid day
             </div>
           </div>
@@ -29,7 +29,7 @@
           <div class="date-input">
             <label class="fw-bold color-smokey-grey uppercase" for="month">Month</label>
             <input class="fs-normal fw-bold" type="number" name="month" id="birthMonth" placeholder="MM">
-            <div class="error fs-small fw-normal-i color-red">
+            <div class="error fs-small fw-normal-i color-red hidden">
               Must be a valid month
             </div>
           </div>
@@ -37,12 +37,12 @@
           <div class="date-input">
             <label class="fw-bold color-smokey-grey uppercase" for="year">Year</label>
             <input class="fs-normal fw-bold" type="number" name="year" id="birthYear" placeholder="YYYY">
-            <div class="error fs-small fw-normal-i color-red">
+            <div class="error fs-small fw-normal-i color-red hidden">
               Must be in the past
             </div>
           </div>
         </div>
-        <div class="error fs-small fw-normal-i color-red">
+        <div class="error fs-small fw-normal-i color-red hidden">
           Must be a valid date
         </div>
         <button id="submitButton" type="submit" class="flex justify-center items-center"><img id="submitArrow"
@@ -52,9 +52,9 @@
 
 
       <div id="date-output">
-        <div class="fs-x-large fw-x-bold-i"><span class="output-numbers color-purple">38</span>years</div>
-        <div class="fs-x-large fw-x-bold-i"><span class="output-numbers color-purple">3</span>months</div>
-        <div class="fs-x-large fw-x-bold-i"><span class="output-numbers color-purple">26</span>days</div>
+        <div class="fs-x-large fw-x-bold-i"><span class="output-numbers color-purple ls-minus-1">38</span>years</div>
+        <div class="fs-x-large fw-x-bold-i"><span class="output-numbers color-purple ls-minus-1">3</span>months</div>
+        <div class="fs-x-large fw-x-bold-i"><span class="output-numbers color-purple ls-minus-1">26</span>days</div>
       </div>
     </section>
 
