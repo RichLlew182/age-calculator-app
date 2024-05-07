@@ -165,17 +165,17 @@
   font-family: 'Poppins Extra Bold Italic';
 }
 
-/* .fs-small {
-  font-size: 14px;
+.fs-small {
+  font-size: 16px;
 }
 
-.fs-large {
+.fs-normal {
   font-size: 32px;
 }
 
 .fs-x-large {
-  font-size: 48px;
-} */
+  font-size: 101px;
+}
 
 .text-center {
   text-align: center;
@@ -183,6 +183,10 @@
 
 .text-right {
   text-align: right;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .hidden {
@@ -219,10 +223,36 @@ main {
   padding-bottom: 50px;
 }
 
+label {
+  display: block;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+input {
+  width: 160px;
+  border-radius: 8px;
+  border: 1px solid var(--lightGrey);
+  padding: 11px 15px;
+}
+
 #ageCalculator {
   margin: auto;
   padding: 50px;
   border-radius: 25px 25px 200px 25px;
+}
+
+#date-entry {
+  -webkit-column-gap: 35px;
+  -moz-column-gap: 35px;
+  column-gap: 35px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--lightGrey);
+}
+
+#date-output {
+  line-height: 1.2;
 }
 
 /* Media Queries */
